@@ -1,3 +1,4 @@
+require 'pry'
 
 class Pokemon
 
@@ -21,6 +22,7 @@ class Pokemon
 
   def alter_hp(hp, db)
     db.execute('UPDATE pokemon SET hp = ? WHERE name = "Pikachu" ', hp)
+    binding.pry
   end
 
 
