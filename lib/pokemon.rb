@@ -20,7 +20,9 @@ class Pokemon
     Pokemon.new(id: test[0], name: test[1], type: test[2], db: db)
   end
 
-
+  def alter_hp(hp, db)
+    db.execute('UPDATE pokemon SET hp = ? WHERE name = "Pikachu" ')
+  end
 
 
 
