@@ -1,3 +1,4 @@
+require_relative '../db/schema_migration.sql'
 class Pokemon
 
   def initialize(id, name, type, db)
@@ -6,7 +7,7 @@ class Pokemon
     @type = type
     @db = db
   end
-  
+
 
 
 
